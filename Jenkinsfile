@@ -1,4 +1,7 @@
-stages {
+pipelne {
+  agent any
+  
+  stages {
 
      stage('Build Artifact - Maven') {
        steps {
@@ -7,3 +10,4 @@ stages {
        }
      }
   }
+}
