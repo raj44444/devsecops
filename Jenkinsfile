@@ -1,4 +1,4 @@
-@Library('slack') _
+/*@Library('slack') _
 
 
 /////// ******************************* Code for fectching Failed Stage Name ******************************* ///////
@@ -50,15 +50,15 @@ pipeline {
     applicationURL="http://secops-poc.eastus.cloudapp.azure.com"
     applicationURI="/increment/99"
   }
-
+*/
   stages {
 
- //    stage('Build Artifact - Maven') {
- //      steps {
- //        sh "mvn clean package -DskipTests=true"
- //        archive 'target/*.jar'
- //      }
- //    }
+     stage('Build Artifact - Maven') {
+       steps {
+         sh "mvn clean package -DskipTests=true"
+         archive 'target/*.jar'
+       }
+     }
 
  //    stage('Unit Tests - JUnit and JaCoCo') {
  //      steps {
