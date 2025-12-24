@@ -1,0 +1,6 @@
+type: specs.openrewrite.org/v1beta/recipe
+name: com.devsecops.upgrade-java-21
+displayName: Upgrade to Java 21 and Spring Boot 2.7
+recipeList:
+  - org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_7
+  - org.openrewrite.java.migrate.UpgradeToJava21
